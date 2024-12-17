@@ -2,4 +2,4 @@ streamlit==1.41.1
 pandas==2.2.3
 altair==5.5.0
 plotly==5.3.1
-numpy==1.24.4
+numpy
