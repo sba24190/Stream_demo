@@ -89,9 +89,9 @@ with st.sidebar:
 # Main layout with three columns
 col = st.columns((1.5, 4.5, 2), gap='medium')
 
-# Column 1: Gains/Losses
+# Column 1: Highest/Lowest Yield
 with col[0]:
-    st.markdown('#### Gains/Losses')
+    st.markdown('#### Highest/Lowest')
 
     # Find highest and lowest cereal yield countries for the selected year
     highest_cereal_yield = df_selected_year.sort_values(by='Cereal_Yield', ascending=False).iloc[0]
@@ -105,7 +105,7 @@ with col[0]:
               value=f"{format_number(lowest_cereal_yield['Cereal_Yield'])} kg/ha",
               delta=f"Lowest Cereal Yield")
     
-    st.markdown('#### States Migration')
+    st.markdown('#### Countries Above Mean Production')
 
     percentage_above_5000 = calculate_percentage(df_selected_year, selected_year)
     percentage_below_5000 = 100 - percentage_above_5000
