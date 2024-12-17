@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # Load the data
-file_path = 'C:/Users/diarm/OneDrive/Documents/CCT MSC Sem1/Programming for Data Analytics/CA/msc-da-sept-24-sem-1-ca2-sba24190/combined_data.csv'
+file_path = 'combined_data.csv'
 df = pd.read_csv(file_path)
 
 # Define the heatmap function
